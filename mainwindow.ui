@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>809</width>
+    <height>609</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VirtualCity</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #1e1e1e;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="labelCycle">
+        <property name="styleSheet">
+         <string notr="true">background-color: #3F51B5;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Cycle: 0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelBudget">
+        <property name="styleSheet">
+         <string notr="true">background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Budget: 500000 $</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelPopulation">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2196F3;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Population: 0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelSatisfaction">
+        <property name="styleSheet">
+         <string notr="true">background-color: #FF9800;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Satisfaction: 50%</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelEau">
+        <property name="styleSheet">
+         <string notr="true">background-color: #03A9F4;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Eau: 1000.0 L</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelElectricite">
+        <property name="styleSheet">
+         <string notr="true">background-color: #FFEB3B;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Electricite: 1000.0 kWh</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="labelPollution">
+        <property name="styleSheet">
+         <string notr="true">background-color: #795548;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Pollution: 0.0</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="btnMaison">
+        <property name="styleSheet">
+         <string notr="true">background-color: #2196F3;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 13px;
+font-weight: bold;
+padding: 12px;
+min-height: 35px;</string>
+        </property>
+        <property name="text">
+         <string>Construire Maison</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnUsine">
+        <property name="styleSheet">
+         <string notr="true">background-color: #FF9800;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 13px;
+font-weight: bold;
+padding: 12px;
+min-height: 35px;</string>
+        </property>
+        <property name="text">
+         <string>Construire Usine</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnParc">
+        <property name="styleSheet">
+         <string notr="true">background-color: #4CAF50;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 13px;
+font-weight: bold;
+padding: 12px;
+min-height: 35px;</string>
+        </property>
+        <property name="text">
+         <string>Construire Parc</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSupprimer">
+        <property name="styleSheet">
+         <string notr="true">background-color: #F44336;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 13px;
+font-weight: bold;
+padding: 12px;
+min-height: 35px;</string>
+        </property>
+        <property name="text">
+         <string>Supprimer Batiment</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnModifier">
+        <property name="styleSheet">
+         <string notr="true">background-color: #9C27B0;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 13px;
+font-weight: bold;
+padding: 12px;
+min-height: 35px;</string>
+        </property>
+        <property name="text">
+         <string>Modifier Batiment</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCycle">
+        <property name="styleSheet">
+         <string notr="true">background-color: #607D8B;
+border: none;
+border-radius: 5px;
+color: white;
+font-size: 13px;
+font-weight: bold;
+padding: 12px;
+min-height: 35px;</string>
+        </property>
+        <property name="text">
+         <string>Demarrer Cycle</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listeBatiments">
+        <property name="styleSheet">
+         <string notr="true">
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="logText">
+      <property name="styleSheet">
+       <string notr="true">
+    color: #00ff00;
+    font-family: &quot;Courier New&quot;, monospace;
+    font-size: 11px;
+    border: 2px solid #37474F;
+    border-radius: 5px;
+    padding: 10px;</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>809</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
